@@ -1,7 +1,7 @@
 /*!
-    * Start Bootstrap - Creative v6.0.1 (https://startbootstrap.com/themes/creative)
+    * Start Bootstrap - Creative v1.0.0 (https://startbootstrap.com/themes/creative)
     * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-creative/blob/master/LICENSE)
+    * Licensed under MIT (https://github.com/BlackrockDigital/stonycreekprototypes/blob/master/LICENSE)
     */
     (function($) {
   "use strict"; // Start of use strict
@@ -55,7 +55,11 @@
       navigateByImgClick: true,
       preload: [0, 1]
     },
-    image: {
+    image: { 
+      titleSrc: 'title',
+      titleSrc: function(item) {
+        return '<a href="' + item.el.attr('href') + '">' + item.el.attr('title') + '</a>';
+        },
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });

@@ -1,6 +1,11 @@
 // Import custom variables and override default Bootstrap variables
 @import "./variables.scss";
 
+// Import Railroad Font
+@font-face {
+    font-family: RailRoadFont;
+    src: url("../assets/fonts/railroader/Railroader.ttf"); }
+
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
 

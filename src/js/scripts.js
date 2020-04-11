@@ -50,7 +50,11 @@
       navigateByImgClick: true,
       preload: [0, 1]
     },
-    image: {
+    image: { 
+      titleSrc: 'title',
+      titleSrc: function(item) {
+        return '<a href="' + item.el.attr('href') + '">' + item.el.attr('title') + '</a>';
+        },
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
