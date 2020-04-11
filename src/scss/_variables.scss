@@ -1,24 +1,17 @@
 // Variables
 
 //- Override and add to color system
-$color-1: #3f4d44;
-$color-2: #4c5d52;
-$color-3: #586c5f;
-$color-4: #657b6d;
-$color-5: #728b7a;
-$color-6: #819889;
-$color-7: #9aaca0;
-$color-8: #b3c1b8;
-$color-9: #ccd6d0;
-$color-10: #e6eae7;
-$color-11: #f7f9f8;
+
 $color-transparent-black: rgba(0,0,0,.5);
 
-$olive: #819889 !default;
-$dark-olive: #3f4d44 !default;
+$conrail-blue: #4c7ec7 !default;
+$outer-space: #494947 !default;
+$daves-grey: #555358 !default;
+$granite-gray: #5f6062 !default;
+$nickel: #7B7263 !default;
 
 //- Override primary color
-$primary: $olive !default;
+$primary: $conrail-blue !default;
 
 //- Override font system
 $font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
