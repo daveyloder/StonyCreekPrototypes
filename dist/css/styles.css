@@ -10081,6 +10081,15 @@ header.masthead h1 {
   }
 }
 
+#sponsors #brandflex {
+  display: flex;
+}
+#sponsors img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
 }
