@@ -5,13 +5,20 @@ header.masthead {
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /assets/img directory to change the image
   // if the image name change, make sure to update the url path below!
-  background: linear-gradient(to bottom, #{fade-out($outer-space, .2)} 0%,#{fade-out($outer-space, .2)} 100%), url('../assets/img/bg-masthead-trains.JPG');
+  background: linear-gradient(to bottom, #{fade-out($outer-space, .6)} 0%,#{fade-out($outer-space, .6)} 100%), url('../assets/img/bg-masthead-trains.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  
   h1 {
+    position: relative;
+    bottom: 75px;
     font-size: 2.25rem;
+  }
+  p {
+    position: relative;
+    top: 75px;
   }
   @include media-breakpoint-up(lg) {
     height: 100vh;
@@ -19,9 +26,13 @@ header.masthead {
     padding-top: $navbar-height;
     padding-bottom: 0;
     p {
+      position: relative;
+      top: 180px;
       font-size: 1.15rem;
     }
     h1 {
+      position: relative;
+      bottom: 180px;
       font-size: 3rem;
     }
   }
