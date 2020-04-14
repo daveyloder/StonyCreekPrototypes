@@ -9993,9 +9993,10 @@ hr.light {
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "RailRoadFont", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #212529;
+  font-size: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
@@ -10059,13 +10060,14 @@ header.masthead {
   background-size: cover;
 }
 header.masthead h1 {
+  font-family: "RailRoadFont", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   position: relative;
-  bottom: 75px;
-  font-size: 2.25rem;
+  bottom: 95px;
+  font-size: 3rem;
 }
 header.masthead p {
   position: relative;
-  top: 75px;
+  top: 100px;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10076,13 +10078,13 @@ header.masthead p {
   }
   header.masthead p {
     position: relative;
-    top: 180px;
+    top: 220px;
     font-size: 1.15rem;
   }
   header.masthead h1 {
     position: relative;
-    bottom: 180px;
-    font-size: 3rem;
+    bottom: 220px;
+    font-size: 5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -10091,13 +10093,8 @@ header.masthead p {
   }
 }
 
-#sponsors #brandflex {
-  display: flex;
-}
-#sponsors img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
+section.page-section#about {
+  padding: 4rem 0;
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
@@ -10134,6 +10131,19 @@ header.masthead p {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+section.page-section#sponsors {
+  padding: 4rem 0;
+}
+
+#sponsors #brandflex {
+  display: flex;
+}
+#sponsors img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 .text-white-75 {

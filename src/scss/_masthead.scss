@@ -11,14 +11,15 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
   
-  h1 {
+  h1 {  
+    font-family: $font-family-railroader;
     position: relative;
-    bottom: 75px;
-    font-size: 2.25rem;
+    bottom: 95px;
+    font-size: 3rem;
   }
   p {
     position: relative;
-    top: 75px;
+    top: 100px;
   }
   @include media-breakpoint-up(lg) {
     height: 100vh;
@@ -27,13 +28,13 @@ header.masthead {
     padding-bottom: 0;
     p {
       position: relative;
-      top: 180px;
+      top: 220px;
       font-size: 1.15rem;
     }
     h1 {
       position: relative;
-      bottom: 180px;
-      font-size: 3rem;
+      bottom: 220px;
+      font-size: 5rem;
     }
   }
   @include media-breakpoint-up(xl) {
