@@ -19,7 +19,18 @@
   $('.js-scroll-trigger').click(function() {
     $('.navbar-collapse').collapse('hide');
   });
-
+  // Closes dropdown link when  dropdown link is clicked
+  $('.dropdown-toggle').click(function() {
+      $('.dropdown-menu').toggle();
+  });
+  $('.dropdown-item').click(function() {
+      $('.dropdown-menu').hide();
+  })
+  // Closes dropdown link when clicked outside of menu
+  $(document).click(function() {
+    $('.dropdown-menu').hide();
+  });
+  
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',

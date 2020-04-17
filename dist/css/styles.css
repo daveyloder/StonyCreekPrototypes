@@ -10090,18 +10090,24 @@ header.masthead p {
   }
   header.masthead p {
     position: relative;
-    top: 180px;
+    top: 220px;
     font-size: 1.15rem;
   }
   header.masthead h1 {
     position: relative;
-    bottom: 180px;
-    font-size: 5rem;
+    bottom: 220px;
+    font-size: 4.3rem;
   }
 }
 @media (min-width: 1200px) {
+  header.masthead p {
+    position: relative;
+    top: 230px;
+  }
   header.masthead h1 {
-    font-size: 3.5rem;
+    position: relative;
+    bottom: 230px;
+    font-size: 5rem;
   }
 }
 
