@@ -42,14 +42,12 @@ html(lang='en')
                             a.nav-link.js-scroll-trigger(href='./#contact') Contact
 
         // Masthead
-        header.masthead
+        header#portfolio-masthead.masthead
             .container.h-100
                 .row.h-100.align-items-center.justify-content-center.text-center
                     .col-lg-10.align-self-end
-                        h1.text-uppercase.text-white.font-weight-bold.mt-5 Portfolio
-                    .col-lg-8.align-self-baseline
-                        p.text-white-75.font-weight-light.mb-5
-                            | Check out our latest work below. We take pride in our work and want to show you the best of the best. If you like what we do, send us a message today!
+                        h1#portfolioheader.text-uppercase.text-white.font-weight-bold.mt-5 Portfolio
+                    
 
         
         // Portfolio section
@@ -60,7 +58,7 @@ html(lang='en')
                 h2.text-center.mb-3 Conrail
                 hr.divider.my-4
                 .row
-                    .col-lg-4.col-sm-6.p-2
+                    .col-lg-4.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Conrail-6972.jpg' title='Kato SD40R as Conrail #6972')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Conrail-6972.jpg', alt='Kato SD40R as Conrail #6972')
                             .portfolio-box-caption
@@ -68,7 +66,7 @@ html(lang='en')
                                     | Conrail Railroad
                                 .project-name
                                     | Kato SD40R, "Conrail #6972"
-                    .col-lg-4.col-sm-6.p-2
+                    .col-lg-4.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Conrail-8208.jpg' title='Atlas TM CR GP38-2 #8208 custom painted, weathered &amp detailed. In the Operation Lifesaver scheme')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Conrail-8208.jpg', alt='Atlas TM CR GP38-2 #8208 custom painted, weathered &amp detailed. In the Operation Lifesaver scheme')
                             .portfolio-box-caption.p-3
@@ -76,29 +74,29 @@ html(lang='en')
                                     | Conrail Railroad
                                 .project-name
                                     | Atlas TM CR GP38-2 #8208
-                    .col-lg-4.col-sm-6.p-2
+                    .col-lg-4.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Conrail-5633.jpg')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Conrail-5633.jpg', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Conrail Railroad
                                 .project-name
                                     | Project Name
                 .row
-                    .col-lg-6.col-sm-6.p-2
+                    .col-lg-6.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Conrail-6013.jpg')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Conrail-6013.jpg', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Conrail Railroad
                                 .project-name
                                     | Project Name
-                    .col-lg-6.col-sm-6.p-2
+                    .col-lg-6.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Conrail-1946.jpg')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Conrail-1946.jpg', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Conrail Railroad
                                 .project-name
                                     | Project Name
                 .row
@@ -106,7 +104,7 @@ html(lang='en')
                     h2.text-center.m-4 Reading
                     hr.divider.my-4
                 .row
-                    .col-lg-4.col-sm-6.p-2
+                    .col-lg-4.col-sm-12.p-2
                          a.portfolio-box(href='assets/img/portfolio/fullsize/Reading-6302.jpg' title='Atlas GE U30C, as the Reading #6302')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Reading-6302.jpg', alt='Atlas GE U30C, as the Reading #6302')
                             .portfolio-box-caption
@@ -114,7 +112,7 @@ html(lang='en')
                                     | Reading Railroad
                                 .project-name
                                     | Atlas GE U30C, "Reading #6302"
-                    .col-lg-4.col-sm-6.p-2
+                    .col-lg-4.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Reading-3644.jpg' title='Kato RDG GP35 #3644, custom painted, weathered &amp detailed')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Reading-3644.jpg', alt='Kato RDG GP35 #3644, custom painted, weathered &amp detailed')
                             .portfolio-box-caption.p-3
@@ -122,12 +120,12 @@ html(lang='en')
                                     | Reading Railroad
                                 .project-name
                                     | Kato RDG GP35 #3644
-                    .col-lg-4.col-sm-6.p-2
+                    .col-lg-4.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Reading-7604.jpg')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Reading-7604.jpg', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Reading Railroad
                                 .project-name
                                     | Project Name
                 .row
@@ -135,35 +133,109 @@ html(lang='en')
                     h2.text-center.m-4 Penn Central
                     hr.divider.my-4
                 .row
-                    .col-lg-6.col-sm-6.p-2
+                    .col-lg-6.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Penn-Central-6065.jpg')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Penn-Central-6065.jpg', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Penn Central Raildroad
                                 .project-name
                                     | Project Name
-                    .col-lg-6.col-sm-6.p-2
+                    .col-lg-6.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Penn-Central-6080.jpg')
                             img.img-fluid(src='assets/img/portfolio/thumbnails/Penn-Central-6080.jpg', alt='')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Penn Central Raildroad
                                 .project-name
                                     | Project Name       
                 .row
                 .col-12
-                    h2.text-center.m-4 Assorted Engines
+                    h2.text-center.m-4 Assorted Engines &amp; Rolling Stock
                     hr.divider.my-4
                 .row
-                    .col-lg-3.col-sm-6.p-2.p-2
-                        a.portfolio-box(href='assets/img/portfolio/fullsize/Penn-Central-6080.jpg')
-                            img.img-fluid(src='assets/img/portfolio/thumbnails/Penn-Central-6080.jpg', alt='')
+                    .col-lg-3.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/Santa-Fe-607.jpg', title='Santa Fe GE C44-9W #607')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/Santa-Fe-607.jpg', alt='Santa Fe GE C44-9W #607')
                             .portfolio-box-caption
                                 .project-category.text-white-50
-                                    | Category
+                                    | Santa Fe
                                 .project-name
-                                    | Project Name  
+                                    | GE C44-9W #607
+                    .col-lg-3.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/B-O-7497.jpg', title='B & O Kato EMD C&O SD40 #7497, Custom Painted')
+                            img.img-fluid(src='assets/img/portfolio/thumbnails/B-O-7497.jpg', alt='B & O Kato EMD C&O SD40 #7497, Custom Painted')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | B &amp; O 
+                                .project-name
+                                    | Kato EMD C&amp;O SD40 #7497, Custom Painted  
+                    .col-lg-3.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/TRAIN_3915-1027.jpg', title='Kato EMDGP #3915 & SD45 #1027 in a custom freelance scheme.')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/TRAIN_3915-1027.jpg', alt='Kato EMDGP #3915 & SD45 #1027 in a custom freelance scheme.')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Freelance 
+                                .project-name
+                                    | Kato EMDGP #3915 &amp; SD45 #1027
+                    .col-lg-3.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/TRAIN_4617.jpg', title='Kato EMD SD40 CSX #4617 in the infamous tattered C&O paint scheme. Painted, weathed & detailed all in shop.')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/TRAIN_4617.jpg', alt='Kato EMD SD40 CSX #4617 in the infamous tattered C&O paint scheme. Painted, weathed & detailed all in shop.')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | C &amp; O 
+                                .project-name
+                                    | Kato EMD SD40 CSX #4617
+                .row
+                    .col-lg-4.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/TRAIN_6300.jpg', title='Kato Philadelphia, Midvale & Atlantic (freelance) SD40-2 #6300. This was custom built, painted, and detailed by the shop.')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/TRAIN_6300.jpg', alt='Kato Philadelphia, Midvale & Atlantic (freelance) SD40-2 #6300. This was custom built, painted, and detailed by the shop.')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Freelance 
+                                .project-name
+                                    | Kato Philadelphia, Midvale &amp; Atlantic (freelance) SD40-2 #6300
+                    .col-lg-4.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/Gondola-598212.jpg', title='Walthers Penn Central Gondola #598212')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/Gondola-598212.jpg', alt='Walthers Penn Central Gondola #598212')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Walthers Penn Central
+                                .project-name
+                                    | Gondola #598212
+                    .col-lg-4.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/Jennie-502269.jpg', title='Bowser PRR class G39B ore "Jennie" CR #502269, weathered by our shop')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/Jennie-502269.jpg', alt='Bowser PRR class G39B ore "Jennie" CR #502269, weathered by our shop')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Conrail Rolling Stock
+                                .project-name
+                                    | "Jennie" CR #502269 
+                .row
+                    .col-lg-4.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/IMG_6994.jpg', title='ExactRail P.S. 4427 cu.ft hopper SBGX (Scoular) #1209, weathered in the shop.')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/IMG_6994.jpg', alt='ExactRail P.S. 4427 cu.ft hopper SBGX (Scoular) #1209, weathered in the shop.')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Scoular
+                                .project-name
+                                    | SBGX #1209
+                    .col-lg-4.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/IMG_6992.jpg', title='P1K 50 CP Rail 50 newsprint boxcar #85446, with weathered detail.')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/IMG_6992.jpg', alt='P1K 50 CP Rail 50 newsprint boxcar #85446, with weathered detail.')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | Conrail Rolling Stock
+                                .project-name
+                                    | "Jennie" #502476
+                    .col-lg-4.col-sm-12.p-2
+                        a.portfolio-box(href='assets/img/portfolio/fullsize/IMG_6983.jpg', title='Bowser PRR Class G39A ore "Jennie" CR #502476, weathered by our shop.')
+                            img.img-fluid(src='assets/img/portfolio/fullsize/IMG_6983.jpg', alt='Bowser PRR Class G39A ore "Jennie" CR #502476, weathered by our shop.')
+                            .portfolio-box-caption
+                                .project-category.text-white-50
+                                    | CP Rail
+                                .project-name
+                                    | P1K #85446        
         // Footer
         footer.bg-light.py-5
             .container
