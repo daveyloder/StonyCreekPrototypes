@@ -10124,6 +10124,9 @@ header.masthead p {
 section.page-section#about {
   padding: 4rem 0;
 }
+section.page-section#about p {
+  font-size: 1.15rem;
+}
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
@@ -10165,9 +10168,6 @@ section.page-section#sponsors {
   padding: 4rem 0;
 }
 
-#sponsors #brandflex {
-  display: flex;
-}
 #sponsors img {
   width: 100%;
   height: auto;
