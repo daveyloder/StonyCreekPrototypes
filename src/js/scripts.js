@@ -50,6 +50,8 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // Move Title On Small Screens
+  
   // Magnific popup calls
   $('#portfolio').magnificPopup({
     delegate: 'a',
