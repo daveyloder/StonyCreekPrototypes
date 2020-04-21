@@ -2,10 +2,10 @@
 
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(15rem - #{$navbar-height});
+  padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /assets/img directory to change the image
   // if the image name change, make sure to update the url path below!
-  background:linear-gradient(to bottom,#{fade-out($outer-space, .75)} 0%,#{fade-out($outer-space, .75)} 100%), url('../assets/img/default-img/bg-masthead-trains.png');
+  background:linear-gradient(to bottom,#{fade-out($outer-space, .2)} 0%,#{fade-out($outer-space, .75)} 100%), url('../assets/img/default-img/bg-masthead-trains.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -13,50 +13,43 @@ header.masthead {
   
   h1 {  
     font-family: $font-family-railroader;
-    position: relative;
     font-size: 3rem;
-    display: none;
+    
   }
-  h1#portfolioheader {
-    display: block;
-    top: 150px;
-  }
-  p {
-    position: relative;
-  }
-  
   @include media-breakpoint-up(lg) {
     height: 100vh;
     min-height: 40rem;
     padding-top: $navbar-height;
     padding-bottom: 0;
     p {
-      position: relative;
-      top: 220px;
       font-size: 1.15rem;
     }
     h1 {
-      position: relative;
-      bottom: 78px;
       font-size: 4.3rem;
-      display: block;
-  }
-  h1#portfolioheader {
-    top: auto;
+    }
   }
   @include media-breakpoint-up(xl) {
-    p{
-      position: relative;
-      top: 230px;
-    }
     h1 {
-      position: relative;
-      bottom: 80px;
       font-size: 5rem;
-    }
-    h1#portfolioheader {
-      top: auto;
     }
   }
 }
+
+#small-header {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  // replace the masthead.jpg image in the /assets/img directory to change the image
+  // if the image name change, make sure to update the url path below!
+  background:linear-gradient(to bottom,#{fade-out($outer-space, .2)} 0%,#{fade-out($outer-space, .5)} 100%), url('../assets/img/default-img/bg-masthead-trains.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  @include media-breakpoint-up(lg) {
+      height: 50vh;
+      min-height: 25rem;
+      padding-top: $navbar-height;
+      padding-bottom: 0;
+  }
 }

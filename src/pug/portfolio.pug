@@ -23,10 +23,10 @@ html(lang='en')
 
         body#page-top
 
-        // Navigation
+         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container
-                a.navbar-brand.js-scroll-trigger(href='./') Stony Creek Prototypes
+                a.navbar-brand.js-scroll-trigger(href='index.html') Stony Creek Protoypes
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
@@ -34,19 +34,22 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='./#about') About
                         li.nav-item.dropdown
-                            a.nav-link.dropdown-toggle(data-toggle='dropdown', data-target='#portfoliodrop', href='#') Portfolio
-                            .dropdown-menu#portfoliodrop
+                            a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#') Portfolio
+                            .dropdown-menu
                                 a.dropdown-item.js-scroll-trigger(href='./#portfolio') Portfolio
-                                a.dropdown-item.js-scroll-trigger(href='#page-top') Full Gallery
+                                a.dropdown-item.js-scroll-trigger(href='#page-top') Full Portfolio
+                                a.dropdown-item.js-scroll-trigger(href='memorium.html') In Memorium
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='./#contact') Contact
-
+        
         // Masthead
-        header#portfolio-masthead.masthead
+        header#small-header.masthead
             .container.h-100
                 .row.h-100.align-items-center.justify-content-center.text-center
-                    .col-lg-10.align-self-end
-                        h1#portfolioheader.text-uppercase.text-white.font-weight-bold.mt-5 Portfolio
+                    .col-lg-10.align-self-start
+                        h3.text-uppercase.text-white.font-weight-bold.mt-5 Our Featured
+                        h1.text-uppercase.text-white.font-weight-bold Portfolio
+                        
                     
 
         
@@ -54,9 +57,13 @@ html(lang='en')
         section#portfolio
             .container-fluid.p-4
                 .row
-                .col-12
-                h2.text-center.mb-3 Conrail
-                hr.divider.my-4
+                    .col-12.text-center
+                        h2.mb-3 Conrail
+                        p.mb-4 
+                            | The following "Conrail" works are dedicated to the life &amp; memory of 
+                            em Marc Giedrowicz
+                        hr.divider.my-4
+
                 .row
                     .col-lg-4.col-sm-12.p-2
                         a.portfolio-box(href='assets/img/portfolio/fullsize/Conrail-6972.jpg' title='Kato SD40R as Conrail #6972')

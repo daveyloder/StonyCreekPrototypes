@@ -9984,7 +9984,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
@@ -10064,8 +10064,8 @@ hr.light {
 
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(15rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(73, 73, 71, 0.25) 0%, rgba(73, 73, 71, 0.25) 100%), url("../assets/img/default-img/bg-masthead-trains.png");
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(73, 73, 71, 0.8) 0%, rgba(73, 73, 71, 0.25) 100%), url("../assets/img/default-img/bg-masthead-trains.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10073,16 +10073,7 @@ header.masthead {
 }
 header.masthead h1 {
   font-family: "RailRoadFont", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  position: relative;
   font-size: 3rem;
-  display: none;
-}
-header.masthead h1#portfolioheader {
-  display: block;
-  top: 150px;
-}
-header.masthead p {
-  position: relative;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10092,40 +10083,38 @@ header.masthead p {
     padding-bottom: 0;
   }
   header.masthead p {
-    position: relative;
-    top: 220px;
     font-size: 1.15rem;
   }
   header.masthead h1 {
-    position: relative;
-    bottom: 78px;
     font-size: 4.3rem;
-    display: block;
-  }
-  header.masthead h1#portfolioheader {
-    top: auto;
   }
 }
-@media (min-width: 992px) and (min-width: 1200px) {
-  header.masthead p {
-    position: relative;
-    top: 230px;
-  }
+@media (min-width: 1200px) {
   header.masthead h1 {
-    position: relative;
-    bottom: 80px;
     font-size: 5rem;
   }
-  header.masthead h1#portfolioheader {
-    top: auto;
+}
+
+#small-header {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(73, 73, 71, 0.8) 0%, rgba(73, 73, 71, 0.5) 100%), url("../assets/img/default-img/bg-masthead-trains.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  #small-header {
+    height: 50vh;
+    min-height: 25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
   }
 }
 
 section.page-section#about {
   padding: 4rem 0;
-}
-section.page-section#about p {
-  font-size: 1.15rem;
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
