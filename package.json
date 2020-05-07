@@ -3,7 +3,7 @@
   "name": "stonycreekprototypes",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build": "npm run clean && npm run imagemin && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets && npm run usemin",
     "build:assets": "node scripts/build-assets.js",
     "build:pug": "node scripts/build-pug.js",
     "build:scripts": "node scripts/build-scripts.js",
@@ -11,7 +11,8 @@
     "clean": "node scripts/clean.js",
     "imagemin":"imagemin src/assets/img/default-img/* -o dist/assets/img/default-img && imagemin src/assets/img/brands/* -o dist/assets/img/brands && imagemin src/assets/img/portfolio/fullsize/* -o dist/assets/img/portfolio/fullsize && imagemin src/assets/img/portfolio/thumbnails/* -o dist/assets/img/portfolio/thumbnails",
     "start": "npm run build && node scripts/start.js",
-    "start:debug": "npm run build && node scripts/start-debug.js"
+    "start:debug": "npm run build && node scripts/start-debug.js",
+    "usemin": "usemin dist/index.html -d dist --htmlmin -o dist/index.html && usemin dist/memorium.html -d dist --htmlmin -o dist/memorium.html && usemin dist/portfolio.html -d dist --htmlmin -o dist/portfolio.html"
   },
   "description": "A website for Stony Creek Prototypes, a service for model trains",
   "keywords": [
