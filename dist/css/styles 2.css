@@ -9984,7 +9984,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
@@ -10065,7 +10065,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(73, 73, 71, 0.6) 0%, rgba(73, 73, 71, 0.6) 100%), url("../assets/img/bg-masthead-trains.png");
+  background: linear-gradient(to bottom, rgba(73, 73, 71, 0.8) 0%, rgba(73, 73, 71, 0.25) 30%, rgba(73, 73, 71, 0.25) 50%, rgba(73, 73, 71, 0.8) 100%), url("../assets/img/default-img/bg-masthead-trains.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10073,13 +10073,12 @@ header.masthead {
 }
 header.masthead h1 {
   font-family: "RailRoadFont", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  position: relative;
-  bottom: 85px;
   font-size: 3rem;
-}
-header.masthead p {
   position: relative;
-  top: 85px;
+  top: 91px;
+}
+header.masthead h3 {
+  display: none;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10089,25 +10088,40 @@ header.masthead p {
     padding-bottom: 0;
   }
   header.masthead p {
-    position: relative;
-    top: 220px;
     font-size: 1.15rem;
   }
+  header.masthead h3 {
+    display: block;
+  }
   header.masthead h1 {
-    position: relative;
-    bottom: 220px;
     font-size: 4.3rem;
+    position: relative;
+    top: 0px;
   }
 }
 @media (min-width: 1200px) {
-  header.masthead p {
-    position: relative;
-    top: 230px;
-  }
   header.masthead h1 {
-    position: relative;
-    bottom: 230px;
     font-size: 5rem;
+    position: relative;
+    top: 0px;
+  }
+}
+
+#small-header {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(73, 73, 71, 0.8) 0%, rgba(73, 73, 71, 0.5) 100%), url("../assets/img/default-img/bg-masthead-trains.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  #small-header {
+    height: 50vh;
+    min-height: 25rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
   }
 }
 
@@ -10155,9 +10169,6 @@ section.page-section#sponsors {
   padding: 4rem 0;
 }
 
-#sponsors #brandflex {
-  display: flex;
-}
 #sponsors img {
   width: 100%;
   height: auto;
