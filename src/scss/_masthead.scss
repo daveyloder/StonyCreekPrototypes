@@ -1,11 +1,15 @@
 // Styling for the masthead
 
+// Header Photo 
+
+$mastheadPhoto: '../assets/img/default-images/header-image.jpg';
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - #{$navbar-height});
   // replace the masthead.jpg image in the /assets/img directory to change the image
   // if the image name change, make sure to update the url path below!
-  background:linear-gradient(to bottom,#{fade-out($outer-space, .2)} 0%,#{fade-out($outer-space, .75)} 30%,#{fade-out($outer-space, .75)} 50%,#{fade-out($outer-space, .2)} 100%), url('../assets/img/default-images/bg-masthead-trains.png');
+  background:linear-gradient(to bottom,#{fade-out($outer-space, .2)} 0%,#{fade-out($outer-space, .75)} 30%,#{fade-out($outer-space, .75)} 50%,#{fade-out($outer-space, .2)} 100%), url($mastheadPhoto);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
