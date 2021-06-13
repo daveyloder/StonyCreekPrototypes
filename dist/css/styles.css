@@ -10188,11 +10188,17 @@ section.page-section#about {
   opacity: 1;
 }
 
-section.page-section#sponsors {
+section.page-section#friends {
   padding: 4rem 0;
 }
 
-#sponsors img {
+#friends h1, #friends h2 {
+  color: white;
+}
+#friends p {
+  color: white;
+}
+#friends img {
   width: 100%;
   height: auto;
   vertical-align: middle;
